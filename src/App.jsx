@@ -14,7 +14,9 @@ function App() {
   // loads new joke to the UI
   function loadJoke() {
     setNewJoke((joke) => !joke);
-    data.punchline = "";
+    setData("");
+    setJokeData("");
+    setJokeDataAxios("");
   }
   // then/catch
   function displayPunchline(childData) {
